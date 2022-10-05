@@ -1,0 +1,127 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    background-color: rgb(48, 187, 230);
+}
+
+article {
+    display: flex;
+    height: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+#buscador {
+    margin-bottom: 1%;
+}
+
+#buscador>label {
+    font-weight: bold;
+}
+
+#contenedor_mapa {
+    width: 50vw;
+}
+
+#ruta {
+    width: 50vw;
+}
+
+#mapa {
+    width: 50vw;
+    height: 60vh;
+    background-color: rgb(48, 187, 230);
+}
+
+.contenedor {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 3fr) 2fr;
+    grid-template-rows: fit-content(90%);
+    background-color: rgb(137, 227, 255);
+}
+
+.contenedor>div {
+    overflow: hidden;
+    font-size: 14px;
+    margin-top: 1%;
+}
+
+.elemento {
+    border: 1.5px solid rgb(19, 115, 145);
+    padding: 10px;
+    line-height: 30px;
+    text-align: center;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#dibujo {
+    background-color: rgb(19, 115, 145);
+    color: white;
+    margin-bottom: 2%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    background-color: rgb(48, 187, 230);
+    font-size: 14px;
+}
+
+
+@media (max-width: 600px) {
+    header {
+        height: 10%;
+    }
+
+    h1 {
+        margin-left: 2%;
+    }
+
+    article {
+        flex-direction: column;
+    }
+
+    #buscador {
+        margin-bottom: 2%;
+        margin-left: 2%;
+    }
+
+    #contenedor_mapa {
+        width: 96vw;
+    }
+
+    .contenedor {
+        grid-template-columns: repeat(3, 2.2fr) 2fr;
+    }
+
+    #ruta {
+        width: 96vw;
+        margin-top: 10%;
+    }
+
+    #mapa {
+        width: 95.5vw;
+    }
+
+    .elemento {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
