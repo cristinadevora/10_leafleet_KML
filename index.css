@@ -57,6 +57,7 @@ article {
 
 .elemento {
     border: 1.5px solid rgb(19, 115, 145);
+    align-self: stretch;
     padding: 10px;
     line-height: 30px;
     text-align: center;
